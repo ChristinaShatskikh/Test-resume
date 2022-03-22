@@ -1,0 +1,26 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: 400;
+  color: $font-color-base;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-base--desktop;
+    line-height: $line-height-base--desktop;
+    color: $font-color-base--desktop;
+
+    padding: 42px;
+  }
+}

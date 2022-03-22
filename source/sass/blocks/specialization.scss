@@ -1,0 +1,55 @@
+.specialization {
+  padding-top: 15px;
+  padding-bottom: 8px;
+  width: 100%;
+  max-width: 710px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.specialization__title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 22px;
+  font-weight: 500;
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.specialization__price {
+  margin: 0;
+  margin-bottom: 12px;
+
+  line-height: 22px;
+  font-weight: 600;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.specialization__area-title {
+  margin: 0;
+  margin-bottom: 6px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.specialization__areas {
+  margin: 0;
+  padding-left: 24px;
+}
+

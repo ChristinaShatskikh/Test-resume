@@ -1,0 +1,13 @@
+.page-header {
+  position: relative;
+}
+
+.page-header__wrapper {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    max-width: 710px;
+    margin-bottom: 24px;
+  }
+}

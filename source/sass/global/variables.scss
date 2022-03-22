@@ -1,0 +1,43 @@
+//Viewports
+
+$mobile-width: 375px;
+$mobile-width-only: 1139px;
+$desktop-width: 1140px;
+
+// Colors
+
+$black: #1b1c1e;
+$white: #ffffff;
+$gray-50: #f5f7f8;
+$gray-100: #fafcfd;
+$gray-150: #f3f6f8;
+$gray-200: #eef2f4;
+$gray-300: #e7eef6;
+$gray-400: #d8deeb;
+$gray-500: #c4cddf;
+$gray-700: #8999a5;
+$gray-800: #767d86;
+$gray-850: #606483;
+$gray-900: #232056;
+$gray-1000: #1e1d2e;
+$blue-200: #cddeff;
+$blue-400: #5fb6e7;
+$blue-500: #2f93e1;
+$blue-1000: #334866;
+$green-200: #c6f8c2;
+$green-400: #afddab;
+$green-1000: #2f9626;
+$orange-600: #ffa438;
+$orange-700: #ff9316;
+$red-10: #ec5f6b;
+$red-600: #ef1c31;
+
+// Font
+
+$font-family-base: Inter, Arial, sans-serif;
+$font-size-base: 16px;
+$font-size-base--desktop: 14px;
+$line-height-base: 24px;
+$line-height-base--desktop: 20px;
+$font-color-base: $gray-900;
+$font-color-base--desktop: $gray-1000;

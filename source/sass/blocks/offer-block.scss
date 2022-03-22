@@ -1,0 +1,86 @@
+.offer-block {
+  &--fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 15px;
+    background-color: $white;
+    z-index: 1000;
+
+    .offer-block__button {
+      margin: 8px;
+      margin-right: 16px;
+    }
+
+    .offer-block__heart-button {
+      margin: 8px;
+      margin-left: 0;
+    }
+  }
+}
+
+.offer-block__button {
+  position: relative;
+  margin: 24px 16px 24px 0;
+  min-width: 287px;
+
+  &:hover {
+    background-color: $orange-700;
+  }
+
+  &.sent {
+    font-size: 14px;
+    line-height: 20px;
+
+    background-image: url("../../img/icons/tick.svg");
+    background-repeat: no-repeat;
+    background-size: 12px 9px;
+    background-position: 90% 50%;
+
+    @media (min-width: $desktop-width) {
+      background-position: 95% 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin: 24px 20px 16px 0;
+    padding: 8px 12px;
+    min-width: 234px;
+  }
+}
+
+.offer-block__heart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  width: 42px;
+  height: 42px;
+
+  background-color: $gray-200;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+
+  &.added {
+    & .toolbar__icon {
+      fill: $red-600;
+      color: $red-600;
+    }
+  }
+
+  &:hover {
+    background-color: rgba($red-10, 0.1);
+
+    & .toolbar__icon {
+      color: $red-600;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 36px;
+    height: 36px;
+  }
+}

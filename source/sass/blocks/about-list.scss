@@ -1,0 +1,38 @@
+.about-list {
+  width: 100%;
+}
+
+.about-list__item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    column-gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.about-list__point {
+  margin-bottom: 4px;
+
+  color: $gray-850;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.about-list__definition {
+  margin: 0;
+}

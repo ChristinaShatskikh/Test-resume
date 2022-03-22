@@ -1,0 +1,197 @@
+.responses {
+  width: 100%;
+
+  &--top {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+
+      border: 1px solid $gray-300;
+      border-radius: 10px;
+    }
+  }
+
+  &--bottom {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.responses__wrapper {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $gray-300;
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 20px;
+  }
+}
+
+.responses__title {
+  margin: 0;
+  padding-right: 20px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $gray-800;
+}
+
+.responses__button {
+  @media (min-width: $desktop-width) {
+    width: 12px;
+    height: 12px;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.responses__icon {
+  fill: none;
+
+  width: 14px;
+  height: 7px;
+
+  &--opened {
+    transform: rotate(180deg);
+  }
+
+  &--closed {
+    transform: rotate(0);
+  }
+}
+
+.responses__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+}
+
+.responses__item {
+  padding: 10px 0;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: 51px 1fr;
+  column-gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 20px;
+    grid-template-columns: 47px 1fr;
+  }
+}
+
+.responses__date {
+  position: relative;
+  padding-top: 26px;
+
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--video-interview::before {
+    background-color: $blue-200;
+    background-image: url("../../img/videointerview-response.svg");
+    background-size: 16px 16px;
+  }
+
+  &--response::before {
+    background-color: $orange-600;
+    background-image: url("../../img/response.svg");
+    background-size: 14px 14px;
+  }
+
+  &--phone-interview::before {
+    background-color: $green-200;
+    background-image: url("../../img/calls.svg");
+    background-size: 12px 12px;
+  }
+}
+
+.responses__description {
+  position: relative;
+  display: block;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -10px;
+    width: 3px;
+    height: 47px;
+    border-radius: 2px;
+  }
+
+  &--video-interview::before {
+    background-color: $blue-400;
+  }
+
+  &--response::before {
+    background-color: $orange-600;
+  }
+
+  &--phone-interview::before {
+    background-color: $green-400;
+  }
+}
+
+.responses__type {
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $gray-800;
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+  }
+}
+
+.responses__position {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+  }
+}

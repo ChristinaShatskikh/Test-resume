@@ -1,0 +1,121 @@
+.modal-offer {
+  display: none;
+  min-height: 452px;
+  margin: 10px;
+
+  background-color: transparent;
+
+  &--show {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 234px;
+    min-height: 278px;
+    margin: 0;
+    border-radius: 6px;
+    top: 16.5%;
+    left: 63.7%;
+  }
+}
+
+.modal-offer__button {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  padding: 15px;
+  margin-bottom: 10px;
+
+  font: inherit;
+  line-height: 22px;
+  font-weight: 600;
+  color: $blue-1000;
+
+  background-color: $white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.modal-offer__list {
+  width: 100%;
+  min-height: 390px;
+  padding: 0 20px;
+
+  background-color: $white;
+  border-radius: 16px;
+
+  @media (min-width: $desktop-width) {
+    padding: 8px;
+  }
+}
+
+.modal-offer__item {
+  position: relative;
+  width: 100%;
+  padding: 16px 0;
+  padding-left: 36px;
+
+  font: inherit;
+  font-size: 17px;
+  text-align: left;
+  color: $gray-1000;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $gray-200;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+  }
+
+  &--reflection::before {
+    background-image: url("../../img/icons/offer-clock.svg");
+  }
+
+  &--video-interview::before {
+    background-image: url("../../img/icons/offer-video-interview.svg");
+  }
+
+  &--interview::before {
+    background-image: url("../../img/icons/offer-interview.svg");
+  }
+
+  &--phone-interview::before {
+    background-image: url("../../img/icons/offer-phone-interview.svg");
+  }
+
+  &--test-task::before {
+    background-image: url("../../img/icons/offer-test.svg");
+  }
+
+  &--offer::before {
+    background-image: url("../../img/icons/offer.svg");
+  }
+
+  &--work::before {
+    background-image: url("../../img/icons/offer-work.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px;
+    padding-left: 32px;
+    margin-bottom: 4px;
+
+    &:hover {
+      background-color: $gray-50;
+      border-radius: 4px;
+    }
+  }
+}

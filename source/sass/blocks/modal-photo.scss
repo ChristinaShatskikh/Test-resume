@@ -1,0 +1,184 @@
+.modal-photo {
+  display: none;
+  position: fixed;
+  content: "";
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  z-index: 2000;
+
+  &--show {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 630px;
+    min-height: 452px;
+
+    background-color: $white;
+  }
+}
+
+.modal-photo__header {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 46px;
+  padding: 12px;
+
+  background-color: rgba($black, 0.75);
+  z-index: 3000;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+    position: static;
+  }
+}
+
+.modal-photo__close {
+  position: absolute;
+
+  top: 24px;
+  left: 12px;
+  width: 12px;
+  height: 12px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+
+    background-color: $white;
+    border-radius: 2px;
+
+    @media (min-width: $desktop-width) {
+      top: -15px;
+      left: 630px;
+      background-color: $gray-850;
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal-photo__number {
+  font-size: 18px;
+  line-height: 22px;
+
+  color: $white;
+}
+
+.modal-photo__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    width: 630px;
+    height: 340px;
+    object-fit: cover;
+  }
+}
+
+.modal-photo__description {
+  position: fixed;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 72px;
+  padding: 10px;
+
+  background-color: rgba($black, 0.75);
+  z-index: 3000;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    width: 100%;
+    min-height: 112px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: $white;
+  }
+}
+
+.modal-photo__price {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $gray-1000;
+  }
+}
+
+.modal-photo__text {
+  margin: 0;
+
+  line-height: 24px;
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+
+    color: $gray-1000;
+  }
+}
+
+.modal-photo__carousel-button {
+  display: none;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    padding: 0;
+    top: 160px;
+    display: flex;
+
+    &--prev {
+      left: 16px;
+    }
+
+    &--next {
+      right: 16px;
+    }
+  }
+}
+
+

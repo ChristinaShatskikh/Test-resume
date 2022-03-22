@@ -1,0 +1,36 @@
+.carousel {
+  position: relative;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.carousel__list {
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+}
+
+.carousel__item {
+  scroll-snap-align: center;
+}
+
+.carousel__button {
+  display: none;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: flex;
+    content: "";
+    padding: 0;
+    top: 55px;
+
+    &--prev {
+      display: none;
+      left: -24px;
+    }
+
+    &--next {
+      right: -24px;
+    }
+  }
+}

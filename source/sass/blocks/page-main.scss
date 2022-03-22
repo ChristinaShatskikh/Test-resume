@@ -1,0 +1,34 @@
+.page-main {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.page-main__specialization {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.page-main__applicant-details {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.page-main__experience {
+  margin-bottom: 28px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
+}
