@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Резюме - тестовое задание</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -15,7 +15,10 @@
         <div class="main-nav__wrapper">
           <div class="applicant">
             <div class="applicant__wrapper">
-              <img class="applicant__image" src="img/picture-nav-ekaterina.jpg" srcset="img/picture-nav-ekaterina@2x.jpg 2x" width="40" height="40" alt="Фотография кандидата">
+              <picture>
+                <source type="image/webp" srcset="img/picture-nav-ekaterina.webp 1x, img/picture-nav-ekaterina@2x.webp 2x">
+                <img class="applicant__image" src="img/picture-nav-ekaterina.jpg" srcset="img/picture-nav-ekaterina@2x.jpg 2x" width="40" height="40" alt="Фотография кандидата">
+              </picture>
               <div class="applicant__information">
                 <p class="applicant__name">Комкова Екатерина</p>
                 <p class="applicant__position">Художник-костюмер</p>
@@ -50,7 +53,10 @@
 
       <section class="resume-header">
         <h1 class="visually-hidden">Резюме кандидата</h1>
-        <img class="resume-header__image" src="img/avatar-ekaterina.png" srcset="img/avatar-ekaterina@2x.png 2x" alt="Фотография кандидата">
+        <picture>
+          <source type="image/webp" srcset="img/avatar-ekaterina.webp 1x, img/avatar-ekaterina@2x.webp 2x">
+          <img class="resume-header__image" src="img/avatar-ekaterina.png" srcset="img/avatar-ekaterina@2x.png 2x" alt="Фотография кандидата">
+        </picture>
         <div class="resume-header__wrapper">
           <p class="resume-header__name">Комкова Екатерина</p>
           <p class="resume-header__about">32 года, Санкт-Петербург, м. Маяковская</p>
@@ -272,25 +278,46 @@
       <div class="carousel">
         <div class="portfolio__list carousel__list">
           <button class="portfolio__item carousel__item" type="button">
-            <img class="portfolio__image" src="img/white-ice-cream.jpg" srcset="img/white-ice-cream@2x.jpg 2x" alt="Шарик мороженого белого цвета">
+            <picture>
+              <source type="image/webp" srcset="img/white-ice-cream.webp 1x, img/white-ice-cream@2x.webp 2x">
+              <img class="portfolio__image" src="img/white-ice-cream.jpg" srcset="img/white-ice-cream@2x.jpg 2x" alt="Шарик мороженого белого цвета">
+            </picture>
           </button>
           <button class="portfolio__item carousel__item" type="button">
-            <img class="portfolio__image" src="img/yellow-ice-cream.jpg" srcset="img/yellow-ice-cream@2x.jpg 2x" alt="Шарик мороженого желтого цвета">
+            <picture>
+              <source type="image/webp" srcset="img/yellow-ice-cream.webp 1x, img/yellow-ice-cream@2x.webp 2x">
+              <img class="portfolio__image" src="img/yellow-ice-cream.jpg" srcset="img/yellow-ice-cream@2x.jpg 2x" alt="Шарик мороженого желтого цвета">
+            </picture>
           </button>
           <button class="portfolio__item carousel__item" type="button">
-            <img class="portfolio__image" src="img/vanilla-ice-cream.jpg" srcset="img/vanilla-ice-cream@2x.jpg 2x" alt="Баночка ванильного пломбира">
+            <picture>
+              <source type="image/webp" srcset="img/vanilla-ice-cream.webp 1x, img/vanilla-ice-cream@2x.webp 2x">
+              <img class="portfolio__image" src="img/vanilla-ice-cream.jpg" srcset="img/vanilla-ice-cream@2x.jpg 2x" alt="Баночка ванильного пломбира">
+            </picture>
           </button>
           <button class="portfolio__item carousel__item" type="button">
-            <img class="portfolio__image" src="img/with-chocolate-ice-cream.jpg" srcset="img/with-chocolate-ice-cream@2x.jpg 2x" alt="Шарик мороженого белого цвета с шоколадом">
+            <picture>
+              <source type="image/webp" srcset="img/with-chocolate-ice-cream.webp 1x, img/with-chocolate-ice-cream@2x.webp 2x">
+              <img class="portfolio__image" src="img/with-chocolate-ice-cream.jpg" srcset="img/with-chocolate-ice-cream@2x.jpg 2x" alt="Шарик мороженого белого цвета с шоколадом">
+            </picture>
           </button>
           <button class="portfolio__item carousel__item" type="button">
-            <img class="portfolio__image" src="img/cake.jpg" srcset="img/cake@2x.jpg 2x" alt="Торт с фигуркой единорога, украшенный разноцветными шариками">
+            <picture>
+              <source type="image/webp" srcset="img/cake.webp 1x, img/cake@2x.webp 2x">
+              <img class="portfolio__image" src="img/cake.jpg" srcset="img/cake@2x.jpg 2x" alt="Торт с фигуркой единорога, украшенный разноцветными шариками">
+            </picture>
           </button>
           <button class="portfolio__item carousel__item" type="button">
-            <img class="portfolio__image" src="img/cherry-ice-cream.jpg" srcset="img/cherry-ice-cream@2x.jpg 2x" alt="Шарик мороженого вишневого цвета">
+            <picture>
+              <source type="image/webp" srcset="img/cherry-ice-cream.webp 1x, img/cherry-ice-cream@2x.webp 2x">
+              <img class="portfolio__image" src="img/cherry-ice-cream.jpg" srcset="img/cherry-ice-cream@2x.jpg 2x" alt="Шарик мороженого вишневого цвета">
+            </picture>
           </button>
           <button class="portfolio__item carousel__item" type="button">
-            <img class="portfolio__image" src="img/beige-ice-cream.jpg" srcset="img/beige-ice-cream@2x.jpg 2x" alt="Шарик мороженого бежевого цвета">
+            <picture>
+              <source type="image/webp" srcset="img/beige-ice-cream.webp 1x, img/beige-ice-cream@2x.webp 2x">
+              <img class="portfolio__image" src="img/beige-ice-cream.jpg" srcset="img/beige-ice-cream@2x.jpg 2x" alt="Шарик мороженого бежевого цвета">
+            </picture>
         </button>
         </div>
         <button class="carousel__button carousel-button carousel__button--prev" type="button" aria-label="Предыдущая работа">
@@ -377,9 +404,9 @@
   </section>
 
   <div class="overlay"></div>
-  <script src="js/popups.js"></script>
-  <script src="js/likes.js"></script>
-  <script src="js/responses.js"></script>
-  <script src="js/scroll.js"></script>
+  <script src="js/popups.min.js"></script>
+  <script src="js/likes.min.js"></script>
+  <script src="js/responses.min.js"></script>
+  <script src="js/scroll.min.js"></script>
 </body>
 </html>

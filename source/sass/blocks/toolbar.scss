@@ -95,11 +95,6 @@
   &--heart {
     width: 22px;
     height: 20px;
-
-    @media (min-width: $desktop-width) {
-      width: 19px;
-      height: 17px;
-    }
   }
 
   &--arrow-forward {
