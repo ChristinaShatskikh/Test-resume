@@ -81,31 +81,31 @@
   }
 
   &--reflection::before {
-    background-image: url("../../img/icons/offer-clock.svg");
+    background-image: url("../img/icons/offer-clock.svg");
   }
 
   &--video-interview::before {
-    background-image: url("../../img/icons/offer-video-interview.svg");
+    background-image: url("../img/icons/offer-video-interview.svg");
   }
 
   &--interview::before {
-    background-image: url("../../img/icons/offer-interview.svg");
+    background-image: url("../img/icons/offer-interview.svg");
   }
 
   &--phone-interview::before {
-    background-image: url("../../img/icons/offer-phone-interview.svg");
+    background-image: url("../img/icons/offer-phone-interview.svg");
   }
 
   &--test-task::before {
-    background-image: url("../../img/icons/offer-test.svg");
+    background-image: url("../img/icons/offer-test.svg");
   }
 
   &--offer::before {
-    background-image: url("../../img/icons/offer.svg");
+    background-image: url("../img/icons/offer.svg");
   }
 
   &--work::before {
-    background-image: url("../../img/icons/offer-work.svg");
+    background-image: url("../img/icons/offer-work.svg");
   }
 
   @media (min-width: $desktop-width) {
